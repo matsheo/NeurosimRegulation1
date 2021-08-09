@@ -56,6 +56,8 @@ Param::Param() {
 	alpha2 = 0.2;	// Learning rate for the weights from hidden to output layer
 	maxWeight = 1;	// Upper bound of weight value
 	minWeight = -1;	// Lower bound of weight value
+	decayrate = 0.4; //****Weight decay rate from L2 Regularization****
+	
     /*Optimization method 
     Available option include: "SGD", "Momentum", "Adagrad", "RMSprop" and "Adam"*/
     optimization_type = "SGD";
